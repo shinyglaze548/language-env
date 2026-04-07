@@ -1,0 +1,16 @@
+
+name: language-learning-env
+description: RL environment for language learning
+version: 1.0
+
+environment:
+  observation_space:
+    type: dict
+  action_space:
+    type: string
+  reward_range: [0.0, 1.0]
+
+entrypoints:
+  reset: reset
+  step: step
+  state: state
