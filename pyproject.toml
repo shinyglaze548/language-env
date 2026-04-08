@@ -4,5 +4,9 @@ version = "0.1.0"
 description = "Language Learning RL Environment"
 dependencies = [
     "fastapi",
-    "uvicorn"
+    "uvicorn",
+    "openenv>=0.2.0"
 ]
+
+[project.scripts]
+server = "app:app"
