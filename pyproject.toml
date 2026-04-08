@@ -1,0 +1,8 @@
+[project]
+name = "language-env"
+version = "0.1.0"
+description = "Language Learning RL Environment"
+dependencies = [
+    "fastapi",
+    "uvicorn"
+]
