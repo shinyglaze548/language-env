@@ -53,7 +53,7 @@ Select correct response from multiple options
 | Incorrect | 0.0 |
 
 ---
-##🌱Journey
+🌱Journey
 
 Started with little to no prior experience in building or deploying RL environments
 
