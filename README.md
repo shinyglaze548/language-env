@@ -59,3 +59,14 @@ Select correct response from multiple options
 ```bash
 python inference.py
 
+🌱Journey
+
+Started with little to no prior experience in building or deploying RL environments
+
+Faced multiple errors across setup, API integration, and deployment
+
+Learned step-by-step through debugging and iteration
+
+Gradually understood how different components (environment, API, deployment) connect
+
+Successfully built, fixed, and deployed a working project under time pressure
