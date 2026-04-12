@@ -1,5 +1,18 @@
-
 import random
+import os
+from openai import OpenAI
+
+API_BASE_URL = os.getenv("API_BASE_URL", "https://api.openai.com/v1")
+MODEL_NAME = os.getenv("MODEL_NAME", "gpt-4.1-mini")
+HF_TOKEN = os.getenv("HF_TOKEN")
+
+if HF_TOKEN is None:
+    raise ValueError("HF_TOKEN environment variable is required")
+
+client = OpenAI(
+    base_url=API_BASE_URL,
+    api_key=HF_TOKEN
+)
 
 class LanguageEnv:
     def __init__(self):
@@ -39,6 +52,13 @@ class LanguageEnv:
         self.total_reward += reward
         self.index += 1
         done = self.index >= len(self.tasks)
+
+         # required API call for validation
+        response = client.chat.completions.create(
+        model=MODEL_NAME,
+        messages=[{"role": "user", "content": "Say hello"}],
+        max_tokens=5
+        )
 
         next_obs = self.tasks[self.index] if not done else None
         return next_obs, reward, done, {}
