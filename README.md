@@ -53,13 +53,7 @@ Select correct response from multiple options
 | Incorrect | 0.0 |
 
 ---
-
-## ⚙️ How to Run
-
-```bash
-python inference.py
-
-🌱Journey
+##🌱Journey
 
 Started with little to no prior experience in building or deploying RL environments
 
@@ -70,3 +64,9 @@ Learned step-by-step through debugging and iteration
 Gradually understood how different components (environment, API, deployment) connect
 
 Successfully built, fixed, and deployed a working project under time pressure
+
+## ⚙️ How to Run
+
+```bash
+python inference.py
+
